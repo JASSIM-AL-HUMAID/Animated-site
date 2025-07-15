@@ -462,7 +462,7 @@ header ul a {
     flex-direction: column;
     align-items: start;
     top: 25%;
-    right: 10%;
+    right: 5%;
     max-width: 300px;
 }
 .skills-box h1 {
@@ -786,11 +786,11 @@ header ul a {
         right: 0;
     }
     .hero .hero-vid-box video {
-        height: 500px;
-        width: 500px;
+        height: 350px;
+        width: 350px;
     }
-    .hero-info P {
-        max-width: 300px;
+    .hero .hero-info P {
+        max-width: 400px;
     }
 
     .info-cards {
@@ -806,12 +806,28 @@ header ul a {
     .my-project {
         margin-bottom: 250px;
     }
-    .my-project .project-vid {
-        width: 250px;
+    .my-project .project-card{
+        gap: 10px;
     }
-
+    .my-project .project-vid video{
+        width: 350px;
+    }
+    .my-project .project-card .project-info {
+        padding: 0;
+    }
+    .slider {
+        bottom: 25%;
+    }
+    .contact-section {
+        margin-top: -300px;
+        /* height: 60vh; */
+    }
     .contact-section .section-title {
         left: 30%;
+        top: 10%;
+    }
+    .footer h2{
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -828,37 +844,58 @@ header ul a {
     header h1 {
         font-size: 25px;
     }
+    .blackhole-box {
+        margin-top: 5%;
+    }
     .hero {
         flex-direction: column;
     }
-    .autoBlur {
-        animation: none;
-    }
     .hero-info {
-        bottom: 15%;
+        top: 20%;
+    }
+    .hero .hero-info h1 {
+        font-size: 28px;
+    }
+    .hero .hero-info p {
+        font-size: 16px;
     }
     .hero .scroll-down {
-        bottom: 5%;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .hero .hero-vid-box {
-        position: relative;
-        margin-top: 20%;
+        display: none;
     }
     .hero .hero-info h1 {
         line-height: 50px;
+    }
+    .info-section .info-cards {
+        display: flex;
+        flex-direction: column;
     }
     .info-cards .card video {
         width: 100%;
     }
     .my-project {
-        margin-bottom: 700px;
+        margin-bottom: 900px;
+        gap: 6%;
     }
     .my-project .project-card {
         flex-direction: column;
         gap: 50px;
+        margin: 50px 0;
+    }
+    .my-project .project-card video {
+        width:300px;
+        height: 200px;
     }
     .my-project .project-card .project-info {
         padding: 0;
+        width: 100%;
+    }
+    .my-project .project-card .project-info p {
+        margin-bottom: 20px;
     }
     .skill-section .designer {
         top: 20%;
@@ -876,11 +913,21 @@ header ul a {
         margin-bottom: 0;
         margin-top: 70px;
     }
+    .slider {
+        bottom: -5%;
+    }
     .slider .list .item img {
         width: 60%;
     }
     .contact-section {
         flex-direction: column;
+        margin-top: 50px;
+        height: 100vh;
+    }
+    .contact-section .section-title {
+        left: 18%;
+        top: -5%;
+        margin: 0;
     }
     .contact-box {
         margin-top: 50px;
@@ -889,6 +936,12 @@ header ul a {
         display: flex;
         flex-direction: column;
         height: fit-content;
+        gap: 10px;
+    }
+    .footer h2 {
+        font-size: 1rem;
+        max-width: 200px;
+        text-align: center;
     }
     .menu-icon {
         display: inline-block;
